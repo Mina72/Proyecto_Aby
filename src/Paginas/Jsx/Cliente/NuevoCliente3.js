@@ -11,6 +11,7 @@ const nuevoclientev3 = (props) => {
     return <p>
         Mi nombre es {props.nombre}, soy un cliente 
         y tengo {props.edad} años de edad.
+        {props.children}
     </p>
 
 

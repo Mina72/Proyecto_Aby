@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import Menu from './Paginas/Menu';
+import Submenu from './Paginas/Submenu';
+import Cliente from './Paginas/Jsx/Cliente';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <Menu />
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <main>
+      <div>
+          <Submenu />
+      </div>
+      <div>
+        <Cliente />
+      </div>
+        <p>@Mina72</p>
+      </main>
     </div>
   );
 }
 
 export default App;
+

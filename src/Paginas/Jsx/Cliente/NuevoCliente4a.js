@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 /*
 uso de props:
@@ -7,12 +7,16 @@ uso de props:
 -un props puede tener cualquier tipo de datos
 -utilizacion de props en un class based component
 -class based component
+- ejemplo de props.children
 */
 
 class nuevoclientev4a extends Component{
     render(){
-    return <p>Mi nombre es {this.props.nombre}, soy un
-    cliente y tengo {this.props.edad} años</p>
+    return <div>
+                <p>Mi nombre es {this.props.nombre}, soy un
+                cliente y tengo {this.props.edad} años</p>
+                {this.props.children}
+            </div>
     }
 }
 
